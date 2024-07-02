@@ -12,8 +12,8 @@ export default function BtnSlider({ direction, moveSlide, num }) {
       <img
         src={
           direction === "next"
-            ? "https://raw.githubusercontent.com/Ziratsu/slider-react/a44cc92f02b0e4995cc661e04c32724fc946ac59/src/Components/Slider/icons/right-arrow.svg"
-            : "https://raw.githubusercontent.com/Ziratsu/slider-react/a44cc92f02b0e4995cc661e04c32724fc946ac59/src/Components/Slider/icons/left-arrow.svg"
+            ? "https://img.icons8.com/?size=50&id=39969&format=png"
+            : "https://img.icons8.com/?size=50&id=39944&format=png"
         }
         alt=""
       />

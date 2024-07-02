@@ -117,10 +117,253 @@ function AllProd() {
     dispatch(addToCart(data));
   }
 
+  let req_data = [
+    {
+      id: 1,
+      featured: "Bestseller",
+      desc: "Transparent Engine With Music And Lights",
+      mrp: 400,
+      off: "20%",
+      review: 240,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/10466675a.webp",
+    },
+    {
+      id: 2,
+      featured: "Vehicle",
+      desc: "Shinsei Pull Back Patrol Toy Boat",
+      mrp: 300,
+      off: "10%",
+      review: 52,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/3488914a.webp",
+    },
+    {
+      id: 3,
+      featured: "Vehicle",
+      desc: "Mini Motorcycle Push And Go Scooter",
+      mrp: 500,
+      off: "10%",
+      review: 339,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/9467314a.webp",
+    },
+    {
+      id: 4,
+      featured: "Vehicle",
+      desc: "Pull Back Ranger Jungle Safari Jeep",
+      mrp: 200,
+      off: "40%",
+      review: 279,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/2318792a.webp",
+    },
+    {
+      id: 5,
+      featured: "Bestseller",
+      desc: "YAMAMA Transparent Concept Racing Car",
+      mrp: 700,
+      off: "20%",
+      review: 44,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/10528874a.webp",
+    },
+    {
+      id: 6,
+      featured: "Vehicle",
+      desc: "Centy Rugged Pull Back Bike",
+      mrp: 600,
+      off: "30%",
+      review: 65,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/2901038a.webp",
+    },
+    {
+      id: 7,
+      featured: "Vehicle",
+      desc: "Centy Jet 747 Airplane Toy",
+      mrp: 500,
+      off: "10%",
+      review: 332,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/202522a.webp",
+    },
+    {
+      id: 8,
+      featured: "Vehicle",
+      desc: "Toyzone Friction Powered Rescue Crane",
+      mrp: 900,
+      off: "20%",
+      review: 372,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/10522158a.webp",
+    },
+    {
+      id: 9,
+      featured: "Bestseller",
+      desc: "Racing Car To Robot Friction Toy",
+      mrp: 300,
+      off: "10%",
+      review: 169,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/8345502a.webp",
+    },
+    {
+      id: 10,
+      featured: "Bestseller",
+      desc: "VGRASSP Battery Operated Police Car",
+      mrp: 800,
+      off: "30%",
+      review: 391,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/9353946a.webp",
+    },
+    {
+      id: 11,
+      featured: "Vehicle",
+      desc: "Karma Bus With Music And Lights",
+      mrp: 200,
+      off: "20%",
+      review: 240,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/10450252a.webp",
+    },
+    {
+      id: 12,
+      featured: "Vehicle",
+      desc: "Centy Pullback CNG Auto Rickshaw",
+      mrp: 500,
+      off: "10%",
+      review: 52,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/1384734a.webp",
+    },
+    {
+      id: 13,
+      featured: "Vehicle",
+      desc: "Toyzone Batman Friction Racing Car",
+      mrp: 600,
+      off: "10%",
+      review: 339,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/11089811a.webp",
+    },
+    {
+      id: 14,
+      featured: "Vehicle",
+      desc: "Lamborghini Car with Sounds and Lights",
+      mrp: 700,
+      off: "20%",
+      review: 279,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/3501195a.webp",
+    },
+    {
+      id: 15,
+      featured: "Bestseller",
+      desc: "Service Vehicle Police Truck Toy",
+      mrp: 100,
+      off: "30%",
+      review: 44,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/11181261a.webp",
+    },
+    {
+      id: 16,
+      featured: "Puzzle",
+      desc: "Anindita Wooden Number Puzzle Multicolor",
+      mrp: 400,
+      off: "20%",
+      review: 65,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/2895768a.webp",
+    },
+    {
+      id: 17,
+      featured: "Puzzle",
+      desc: "Imagi Make Mapology India With Capitals",
+      mrp: 500,
+      off: "10%",
+      review: 332,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/2022461a.webp",
+    },
+    {
+      id: 18,
+      featured: "Bestseller",
+      desc: "Wooden 1 to 20 Numbers & Shapes Puzzle",
+      mrp: 900,
+      off: "30%",
+      review: 372,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/2895776a.webp",
+    },
+    {
+      id: 19,
+      featured: "Puzzle",
+      desc: "Alphabets And Numbers Puzzle Foam Mat",
+      mrp: 300,
+      off: "10%",
+      review: 169,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/9805970a.webp",
+    },
+    {
+      id: 20,
+      featured: "Bestseller",
+      desc: "Skillofun Animal Alphabet Wooden Tray",
+      mrp: 200,
+      off: "10%",
+      review: 391,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/81197a.webp",
+    },
+    {
+      id: 21,
+      featured: "Puzzle",
+      desc: "Wooden Solar System Jigsaw Puzzle",
+      mrp: 400,
+      off: "20%",
+      review: 240,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/8886983a.webp",
+    },
+    {
+      id: 22,
+      featured: "Puzzle",
+      desc: "Anindita Toys Toddler Puzzles",
+      mrp: 700,
+      off: "10%",
+      review: 52,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/755803a.webp",
+    },
+    {
+      id: 23,
+      featured: "Puzzle",
+      desc: "Babyhug Wooden Shapes Puzzle",
+      mrp: 600,
+      off: "10%",
+      review: 339,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/2611417a.webp",
+    },
+    {
+      id: 24,
+      featured: "Puzzle",
+      desc: "Babyhug Wooden Fruits Puzzle",
+      mrp: 800,
+      off: "40%",
+      review: 279,
+      image:
+        "https://cdn.fcglcdn.com/brainbees/images/products/438x531/2611413a.webp",
+    },
+  ];
+
   return (
     <DIV1>
       <DIV2>
-        {data2.map((item) => (
+        {req_data.map((item) => (
           <DIV3 className="hoverStyle">
             <p style={{ color: "coral", padding: "20px", fontSize: "13px" }}>
               {" "}
